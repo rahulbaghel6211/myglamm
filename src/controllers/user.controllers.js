@@ -3,7 +3,7 @@ const User=require("../models/user.models")
 const router=express.Router();
 
 
-router.post("",async(req,res)=>{
+router.post("/rahul123",async(req,res)=>{
  try {
      const user= await User.create(req.body)
      return res.send(user)
@@ -16,7 +16,7 @@ router.post("",async(req,res)=>{
 })
 
 
-router.get("",async(req,res)=>{
+router.get("/rahul123",async(req,res)=>{
     try {
         const user= await User.find().lean().exec()
         return res.send(user)
